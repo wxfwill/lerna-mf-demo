@@ -1,0 +1,1 @@
+{"version":3,"file":"main.js","mappings":";;;;;AAAA;AACA;AACA;AACA;AACA;AACA;AACA;AACA","sources":["webpack://@webpack-demo/lib-app/./index.js"],"sourcesContent":["/*\r\n * @Author: will\r\n * @Date: 2022-04-01 15:49:25\r\n * @LastEditTime: 2022-04-01 16:25:35\r\n * @LastEditors: will\r\n * @Description:\r\n */\r\nconsole.log(\"hello lib-app\");\r\n"],"names":[],"sourceRoot":""}
