@@ -35,9 +35,18 @@ const styleMapping = {
 export default class Button extends React.Component {
   constructor(props) {
     super(props);
+    this.handleParent = this.handleParent.bind(this);
   }
+  handleParent = () => {
+    console.log(this);
+    this.props?.msgInfo("===按钮告诉父级元素的哈");
+  };
   render() {
     var type = this.props.type || "primary";
-    return <button style={styleMapping[type]}>{type} Button</button>;
+    return (
+      <button style={styleMapping[type]} onClick={this.handleParent}>
+        {type} Button
+      </button>
+    );
   }
 }

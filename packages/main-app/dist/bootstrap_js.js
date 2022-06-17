@@ -37,6 +37,10 @@ __webpack_require__.r(__webpack_exports__);
 
 
 const App = () => {
+  const msgInfo = msg => {
+    console.log("来自儿子的诉求" + msg);
+  };
+
   return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
     className: "main-app",
     children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)("h6", {
@@ -45,7 +49,10 @@ const App = () => {
       children: "Hi World"
     }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsxs)("div", {
       className: "child-app",
-      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_Logo__WEBPACK_IMPORTED_MODULE_1___default()), {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_Button__WEBPACK_IMPORTED_MODULE_2___default()), {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3___default()), {
+      children: [/*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_Logo__WEBPACK_IMPORTED_MODULE_1___default()), {}), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_Button__WEBPACK_IMPORTED_MODULE_2___default()), {
+        msgInfo: msgInfo,
+        type: "warning"
+      }), /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_5__.jsx)((component_app_ToolTip__WEBPACK_IMPORTED_MODULE_3___default()), {
         content: "\u63D0\u793A\u6309\u94AE",
         message: "\u5E72\u5565\u63D0\u793A"
       })]
